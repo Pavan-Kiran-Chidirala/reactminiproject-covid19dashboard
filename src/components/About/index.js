@@ -12,7 +12,6 @@ const appConstants = {
   initial: 'INITIAL',
   progress: 'IN_PROGRESS',
   success: 'SUCCESS',
-  failure: 'FAILURE',
 }
 
 class About extends Component {
@@ -43,31 +42,26 @@ class About extends Component {
   successContainer = () => {
     const {faqList} = this.state
     return (
-      <div className="main-about-container">
-        <Header />
-        <div className="about-middle-container">
-          <h1 className="about-heading">About</h1>
-          <p className="last-updated">Last update on November 1st 2021.</p>
-          <p className="vaccine-distribution">
-            COVID-19 vaccines be ready for distribution
-          </p>
-          <ul testid="faqsUnorderedList" className="ques-list">
-            {faqList.map(eachValue => (
-              <li className="ques-list-item" key={eachValue.qno}>
-                <p className="question">{eachValue.question}</p>
-                <p className="answer">{eachValue.answer}</p>
-              </li>
-            ))}
-          </ul>
-          <Footer />
-        </div>
+      <div className="about-middle-container">
+        <h1 className="about-heading">About</h1>
+        <p className="last-updated">Last update on November 1st 2021.</p>
+        <p className="vaccine-distribution">
+          COVID-19 vaccines be ready for distribution
+        </p>
+        <ul testid="faqsUnorderedList" className="ques-list">
+          {faqList.map(eachValue => (
+            <li className="ques-list-item" key={eachValue.qno}>
+              <p className="question">{eachValue.question}</p>
+              <p className="answer">{eachValue.answer}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     )
   }
 
   loaderContainer = () => (
     <div className="main-home-container">
-      <Header />
       <div testid="aboutRouteLoader" className="loader-container">
         <Loader type="TailSpin" color="#007BFF" width="25px" height="25px" />
       </div>
@@ -79,16 +73,19 @@ class About extends Component {
     switch (appStatus) {
       case appConstants.success:
         return this.successContainer()
-      case appConstants.failure:
-        return this.failureContainer()
-
       default:
         return this.loaderContainer()
     }
   }
 
   render() {
-    return this.checkCondition()
+    return (
+      <>
+        <Header />
+        {this.checkCondition()}
+        <Footer />
+      </>
+    )
   }
 }
 

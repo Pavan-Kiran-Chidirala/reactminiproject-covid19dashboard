@@ -8,7 +8,8 @@
   align-items: center;
   list-style-type: none;
   padding: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
+  font-family: 'Roboto';
 }
 
 .nav-list {
@@ -31,6 +32,7 @@
   line-height: 24px;
   color: #f8fafc;
   margin-left: 10%;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 576px) {
@@ -41,6 +43,7 @@
 
 .blue-text {
   color: #007bff;
+  margin-left: 0px;
 }
 
 .nav-list-item-home {
@@ -67,6 +70,11 @@
 
 .link-logo {
   text-decoration: none;
+}
+
+.link-item {
+  text-decoration: none;
+  margin-right: 20px;
 }
 
 .menu-button {
@@ -109,14 +117,6 @@
     align-items: center;
     margin-top: 0px;
     margin-bottom: 0px;
-  }
-
-  .home-list-item {
-    margin-right: 20px;
-  }
-
-  .about-list-item {
-    padding: 0px;
   }
 
   .close-item {

@@ -23,18 +23,25 @@ class Header extends Component {
       path === '/about' ? 'link-name highlight' : 'link-name'
     return (
       <>
-        <div className="header-list">
+        <nav className="header-list">
           <Link to="/" className="link-logo">
-            <h1 className="app-name">
-              COVID19<span className="blue-text">INDIA</span>
-            </h1>
+            <span className="app-name">COVID19</span>
+            <span className="app-name blue-text">INDIA</span>
           </Link>
           <ul className="nav-list">
             <Link className="link-logo" to="/">
-              <li className={homeClassName}>Home</li>
+              <li>
+                <button type="button" className={homeClassName}>
+                  Home
+                </button>
+              </li>
             </Link>
             <Link className="link-logo" to="/about">
-              <li className={aboutClassName}>About</li>
+              <li>
+                <button type="button" className={aboutClassName}>
+                  About
+                </button>
+              </li>
             </Link>
           </ul>
           <button
@@ -48,23 +55,23 @@ class Header extends Component {
               className="menu-image"
             />
           </button>
-        </div>
+        </nav>
         {showMenu ? (
           <ul className="menu-list">
-            <li className="home-list-item">
-              <Link className="link-logo" to="/">
+            <Link className="link-item" to="/">
+              <li className="home-list-item">
                 <button type="button" className={homeClassName}>
                   Home
                 </button>
-              </Link>
-            </li>
-            <li className="about-list-item">
-              <Link className="link-logo" to="/about">
+              </li>
+            </Link>
+            <Link className="link-item" to="/about">
+              <li className="about-list-item">
                 <button type="button" className={aboutClassName}>
                   About
                 </button>
-              </Link>
-            </li>
+              </li>
+            </Link>
             <li className="close-item">
               <button
                 type="button"

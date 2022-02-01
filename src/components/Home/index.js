@@ -273,18 +273,18 @@ class Home extends Component {
         {searchList.length !== 0 && searchInput !== '' && (
           <ul className="search-container" testid="searchResultsUnorderedList">
             {searchList.map(eachValue => (
-              <li className="search-list-item" key={eachValue.state_code}>
-                <Link
-                  to={`/state/${eachValue.state_code}`}
-                  className="search-link"
-                >
+              <Link
+                to={`/state/${eachValue.state_code}`}
+                className="search-link"
+              >
+                <li className="search-list-item" key={eachValue.state_code}>
                   <p className="item-name">{eachValue.state_name}</p>
                   <div className="icon-container">
                     <p className="item-code">{eachValue.state_code}</p>
                     <BiChevronRightSquare color="#FACC15" />
                   </div>
-                </Link>
-              </li>
+                </li>
+              </Link>
             ))}
           </ul>
         )}

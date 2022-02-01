@@ -6,12 +6,13 @@ import {FaTwitter} from 'react-icons/fa'
 
 import './index.css'
 
-function Footer() {
+export default function Footer() {
   return (
-    <div className="main-footer-container">
-      <h1 className="website-name">
-        COVID19<span className="blue-text">INDIA</span>
-      </h1>
+    <footer className="main-footer-container">
+      <div className="website-name">
+        <span>COVID19</span>
+        <span className="blue-text">INDIA</span>
+      </div>
       <p className="footer-note">
         we stand with everyone fighting on the front lines
       </p>
@@ -20,8 +21,6 @@ function Footer() {
         <FiInstagram className="footer-icon" />
         <FaTwitter className="footer-icon" />
       </div>
-    </div>
+    </footer>
   )
 }
-
-export default Footer

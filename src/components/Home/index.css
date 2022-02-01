@@ -58,9 +58,21 @@
   padding: 0px;
 }
 
+.search-link {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
 .search-list-item {
   width: 100%;
   height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 576px) {
@@ -76,17 +88,6 @@
     width: 320px;
     height: 40px;
   }
-}
-
-.search-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  text-decoration: none;
 }
 
 .search-link:focus {
