@@ -243,15 +243,7 @@ const cardConstants = {
   deceased: 'DECEASED',
 }
 
-/* const trendStatus = {
-  cumulative: 'CUMULATIVE',
-  daily: 'DAILY',
-}
-*/
-
 let lineChartData = {}
-
-// let districtNames = {}
 
 class StateSpecific extends Component {
   state = {
@@ -260,8 +252,6 @@ class StateSpecific extends Component {
     appStatus1: appConstants.initial,
     appStatus2: appConstants.initial,
     timeLineData: [],
-    // trendState: trendStatus.cumulative,
-    // selectValue: 'Select District',
   }
 
   componentDidMount() {
@@ -353,7 +343,6 @@ class StateSpecific extends Component {
       history.replace('/not-found')
     }
     if (response.ok) {
-      // districtNames = data[`${stateCode}`].districts
       const newData = data[`${stateCode}`].dates
       this.setState({timeLineData: newData, appStatus2: appConstants.success})
     }
@@ -682,9 +671,7 @@ class StateSpecific extends Component {
 
   getLineChartData = () => {
     const {timeLineData} = this.state
-    /* if (selectValue !== 'Select District') {
-      timeLineData = districtNames[selectValue].dates
-    } */
+
     const confirmedData = []
     Object.keys(timeLineData).forEach(key =>
       confirmedData.push({
@@ -748,86 +735,7 @@ class StateSpecific extends Component {
       deceased: deceasedData,
       tested: testedData,
     }
-
-    /* if (trendState === trendStatus.daily) {
-      let refValue = 0
-      const newConfirmedData = confirmedData.map(eachValue => {
-        let newValue = 0
-        newValue = eachValue.number - refValue
-        refValue = eachValue.number
-        return {
-          date: eachValue.date,
-          number: newValue,
-        }
-      })
-      refValue = 0
-      const newRecoveredData = recoveredData.map(eachValue => {
-        let newValue = 0
-        newValue = eachValue.number - refValue
-        refValue = eachValue.number
-        return {
-          date: eachValue.date,
-          number: newValue,
-        }
-      })
-      refValue = 0
-      const newDeceasedData = deceasedData.map(eachValue => {
-        let newValue = 0
-        newValue = eachValue.number - refValue
-        refValue = eachValue.number
-        return {
-          date: eachValue.date,
-          number: newValue,
-        }
-      })
-      refValue = 0
-      const newActiveData = activeData.map(eachValue => {
-        let newValue = 0
-        if (eachValue.number > refValue) {
-          newValue = eachValue.number - refValue
-          refValue = eachValue.number
-        }
-        refValue = eachValue.number
-        return {
-          date: eachValue.date,
-          number: newValue,
-        }
-      })
-      refValue = 0
-      const newTestedData = testedData.map(eachValue => {
-        let newValue = 0
-        newValue = eachValue.number - refValue
-        refValue = eachValue.number
-        return {
-          date: eachValue.date,
-          number: newValue,
-        }
-      })
-      newConfirmedData.splice(0, 1)
-      newActiveData.splice(0, 1)
-      newRecoveredData.splice(0, 1)
-      newDeceasedData.splice(0, 1)
-      newTestedData.splice(0, 1)
-      lineChartData = {
-        confirmed: newConfirmedData,
-        active: newActiveData,
-        recovered: newRecoveredData,
-        deceased: newDeceasedData,
-        tested: newTestedData,
-      }
-    }
-    */
   }
-
-  /* selectChange = e => {
-    this.setState({selectValue: e.target.value}, this.getLineChartData)
-  }
-
-  trendChange = value => {
-    this.setState({trendState: value})
-  }
-
-  */
 
   timeLineSuccessContainer = () => {
     const {timeLineData, cardStatus} = this.state
@@ -853,16 +761,6 @@ class StateSpecific extends Component {
         break
     }
     this.getLineChartData()
-    /* const daily =
-      trendState === trendStatus.daily
-        ? 'trend-button highlight-trend'
-        : 'trend-button'
-    const cumulative =
-      trendState === trendStatus.cumulative
-        ? 'trend-button highlight-trend'
-        : 'trend-button'
-    const selectOptions = Object.keys(districtNames)
-    */
     return (
       <div testid="lineChartsContainer" className="graphs-container">
         <div className="graphs-lg">
