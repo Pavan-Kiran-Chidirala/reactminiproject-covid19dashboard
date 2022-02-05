@@ -116,7 +116,7 @@
 
 .card-list-item {
   height: 100%;
-  min-width: 150px;
+  min-width: 165px;
   justify-content: flex-start;
   align-items: center;
   border-radius: 5px;
@@ -154,22 +154,22 @@
 
 .confirm-card-name {
   color: #ff073a;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .active-card-name {
   color: #007bff;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .recovered-card-name {
   color: #28a745;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .deceased-card-name {
   color: #6c757d;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .confirm-card-image {
@@ -198,22 +198,22 @@
 
 .confirm-card-number {
   color: #ff073a;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .active-card-number {
   color: #007bff;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .recovered-card-number {
   color: #28a745;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .deceased-card-number {
   color: #6c757d;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .top-districts {
@@ -279,23 +279,6 @@
   align-items: center;
   padding-left: 80px;
   padding-right: 80px;
-}
-
-.bar-chart-lg {
-  display: block;
-}
-
-.bar-chart-sm {
-  display: none;
-}
-
-@media screen and (max-width: 576px) {
-  .bar-chart-lg {
-    display: none;
-  }
-  .bar-chart-sm {
-    display: block;
-  }
 }
 
 .daily-spread-trends {
@@ -457,36 +440,107 @@
   }
 }
 
-.line-chart-lg {
-  display: block;
-}
-
-.line-chart-sm {
-  display: none;
-}
-
-@media screen and (max-width: 576px) {
-  .line-chart-lg {
-    display: none;
-  }
-  .line-chart-sm {
-    display: block;
-  }
-}
-
 .graphs-lg {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 }
 
 .graphs-sm {
   display: none;
+  width: 100%;
 }
 
 @media screen and (max-width: 576px) {
   .graphs-lg {
     display: none;
+    width: 100%;
   }
   .graphs-sm {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
   }
+}
+
+.trend-holder {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.trend-button {
+  padding: 10px;
+  border-style: none;
+  outline: none;
+  background-color: #1c1c2b;
+  color: #64748b;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.image-container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.state-image {
+  width: 320px;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 100px;
+}
+
+.ncp-report {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.population-heading {
+  color: #f1f5f9;
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+
+.content-numbers {
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+.highlight-trend {
+  color: #e2e8f0;
+}
+
+.select-container {
+  height: auto;
+  align-self: flex-start;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+
+.select-element {
+  width: 250px;
+  padding: 8px;
+  background-color: #2f2f43;
+  opacity: 0.5;
+  color: #f8fafc;
+  font-size: 12px;
+  border-style: none;
+  outline: none;
+  border-radius: 4px;
 }

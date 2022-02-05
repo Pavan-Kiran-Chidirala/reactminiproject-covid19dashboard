@@ -30,14 +30,14 @@ class Header extends Component {
           </Link>
           <ul className="nav-list">
             <Link className="link-logo" to="/">
-              <li>
+              <li key="1">
                 <button type="button" className={homeClassName}>
                   Home
                 </button>
               </li>
             </Link>
             <Link className="link-logo" to="/about">
-              <li>
+              <li key="2">
                 <button type="button" className={aboutClassName}>
                   About
                 </button>
@@ -59,20 +59,20 @@ class Header extends Component {
         {showMenu ? (
           <ul className="menu-list">
             <Link className="link-item" to="/">
-              <li className="home-list-item">
+              <li className="home-list-item" key="1">
                 <button type="button" className={homeClassName}>
                   Home
                 </button>
               </li>
             </Link>
             <Link className="link-item" to="/about">
-              <li className="about-list-item">
+              <li className="about-list-item" key="2">
                 <button type="button" className={aboutClassName}>
                   About
                 </button>
               </li>
             </Link>
-            <li className="close-item">
+            <li className="close-item" key="3">
               <button
                 type="button"
                 className="close-button"

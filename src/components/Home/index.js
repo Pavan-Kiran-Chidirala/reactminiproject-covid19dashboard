@@ -193,18 +193,31 @@ class Home extends Component {
     const response = await fetch(url)
     const data = await response.json()
     if (response.ok) {
-      const newData = statesList.map(eachValue => ({
-        confirmed: data[`${eachValue.state_code}`].total.confirmed,
-        recovered: data[`${eachValue.state_code}`].total.recovered,
-        deceased: data[`${eachValue.state_code}`].total.deceased,
-        population: data[`${eachValue.state_code}`].meta.population,
-        active:
-          data[`${eachValue.state_code}`].total.confirmed -
-          (data[`${eachValue.state_code}`].total.recovered +
-            data[`${eachValue.state_code}`].total.deceased),
-        id: eachValue.state_code,
-        name: eachValue.state_name,
-      }))
+      const newData = statesList.map(eachValue => {
+        if (data[eachValue.state_code]) {
+          return {
+            confirmed: data[`${eachValue.state_code}`].total.confirmed,
+            recovered: data[`${eachValue.state_code}`].total.recovered,
+            deceased: data[`${eachValue.state_code}`].total.deceased,
+            population: data[`${eachValue.state_code}`].meta.population,
+            active:
+              data[`${eachValue.state_code}`].total.confirmed -
+              (data[`${eachValue.state_code}`].total.recovered +
+                data[`${eachValue.state_code}`].total.deceased),
+            id: eachValue.state_code,
+            name: eachValue.state_name,
+          }
+        }
+        return {
+          confirmed: 0,
+          recovered: 0,
+          deceased: 0,
+          population: 0,
+          active: 0,
+          id: eachValue.state_code,
+          name: eachValue.state_name,
+        }
+      })
       this.setState({countryWideList: newData, appStatus: appConstants.success})
     }
   }

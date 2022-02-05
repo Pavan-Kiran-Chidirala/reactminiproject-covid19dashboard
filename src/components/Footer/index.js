@@ -9,10 +9,10 @@ import './index.css'
 export default function Footer() {
   return (
     <footer className="main-footer-container">
-      <div className="website-name">
+      <h1 className="website-name">
         <span>COVID19</span>
         <span className="blue-text">INDIA</span>
-      </div>
+      </h1>
       <p className="footer-note">
         we stand with everyone fighting on the front lines
       </p>
