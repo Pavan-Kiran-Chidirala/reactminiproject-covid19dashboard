@@ -193,18 +193,31 @@ class Home extends Component {
     const response = await fetch(url)
     const data = await response.json()
     if (response.ok) {
-      const newData = statesList.map(eachValue => ({
-        confirmed: data[`${eachValue.state_code}`].total.confirmed,
-        recovered: data[`${eachValue.state_code}`].total.recovered,
-        deceased: data[`${eachValue.state_code}`].total.deceased,
-        population: data[`${eachValue.state_code}`].meta.population,
-        active:
-          data[`${eachValue.state_code}`].total.confirmed -
-          (data[`${eachValue.state_code}`].total.recovered +
-            data[`${eachValue.state_code}`].total.deceased),
-        id: eachValue.state_code,
-        name: eachValue.state_name,
-      }))
+      const newData = statesList.map(eachValue => {
+        if (data[eachValue.state_code]) {
+          return {
+            confirmed: data[`${eachValue.state_code}`].total.confirmed,
+            recovered: data[`${eachValue.state_code}`].total.recovered,
+            deceased: data[`${eachValue.state_code}`].total.deceased,
+            population: data[`${eachValue.state_code}`].meta.population,
+            active:
+              data[`${eachValue.state_code}`].total.confirmed -
+              (data[`${eachValue.state_code}`].total.recovered +
+                data[`${eachValue.state_code}`].total.deceased),
+            id: eachValue.state_code,
+            name: eachValue.state_name,
+          }
+        }
+        return {
+          confirmed: 0,
+          recovered: 0,
+          deceased: 0,
+          population: 0,
+          active: 0,
+          id: eachValue.state_code,
+          name: eachValue.state_name,
+        }
+      })
       this.setState({countryWideList: newData, appStatus: appConstants.success})
     }
   }
@@ -273,18 +286,18 @@ class Home extends Component {
         {searchList.length !== 0 && searchInput !== '' && (
           <ul className="search-container" testid="searchResultsUnorderedList">
             {searchList.map(eachValue => (
-              <li className="search-list-item" key={eachValue.state_code}>
-                <Link
-                  to={`/state/${eachValue.state_code}`}
-                  className="search-link"
-                >
+              <Link
+                to={`/state/${eachValue.state_code}`}
+                className="search-link"
+              >
+                <li className="search-list-item" key={eachValue.state_code}>
                   <p className="item-name">{eachValue.state_name}</p>
                   <div className="icon-container">
                     <p className="item-code">{eachValue.state_code}</p>
                     <BiChevronRightSquare color="#FACC15" />
                   </div>
-                </Link>
-              </li>
+                </li>
+              </Link>
             ))}
           </ul>
         )}

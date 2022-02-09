@@ -14,146 +14,218 @@ const statesList = [
   {
     state_code: 'AN',
     state_name: 'Andaman and Nicobar Islands',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875895/Group_7362andaman_1_jh56ac.svg',
   },
   {
     state_code: 'AP',
     state_name: 'Andhra Pradesh',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643877291/Group_7354andhra_dhfqkx.svg',
   },
   {
     state_code: 'AR',
     state_name: 'Arunachal Pradesh',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643877187/Group_7340arunachal_i2mqek.svg',
   },
   {
     state_code: 'AS',
     state_name: 'Assam',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643874959/Group_7341assam_mafnkb.svg',
   },
   {
     state_code: 'BR',
     state_name: 'Bihar',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643874425/Group_7335bihar_zbj8hr.svg',
   },
   {
     state_code: 'CH',
     state_name: 'Chandigarh',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875818/Group_7361chandigargh_i4y1ct.svg',
   },
   {
     state_code: 'CT',
     state_name: 'Chhattisgarh',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875355/Group_7353chattisgarh_nka5kq.svg',
   },
   {
     state_code: 'DN',
     state_name: 'Dadra and Nagar Haveli and Daman and Diu',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875946/Group_7357daman_xojaml.svg',
   },
   {
     state_code: 'DL',
     state_name: 'Delhi',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643876123/Group_7358delhi_lzftgr.svg',
   },
   {
     state_code: 'GA',
     state_name: 'Goa',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643877071/Group_7349goa_vigjoh.svg',
   },
   {
     state_code: 'GJ',
     state_name: 'Gujarat',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643874554/Group_7337gujarat_myivom.svg',
   },
   {
     state_code: 'HR',
     state_name: 'Haryana',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643874182/Group_7332haryana_j5p8vb.svg',
   },
   {
     state_code: 'HP',
     state_name: 'Himachal Pradesh',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643872638/Group_7364himachal_qzmfyy.svg',
   },
   {
     state_code: 'JK',
     state_name: 'Jammu and Kashmir',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643866939/Group_7328jammu_dgsgns.svg',
   },
   {
     state_code: 'JH',
     state_name: 'Jharkhand',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643874637/Group_7342jharkhand_a2ef27.svg',
   },
   {
     state_code: 'KA',
     state_name: 'Karnataka',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875591/Group_7339karnataka_keqvvv.svg',
   },
   {
     state_code: 'KL',
     state_name: 'Kerala',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875646/Group_7355kerala_hy2ctu.svg',
   },
   {
     state_code: 'LA',
     state_name: 'Ladakh',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643876202/Group_7363ladakh_wgfyhj.svg',
   },
   {
     state_code: 'LD',
     state_name: 'Lakshadweep',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875997/Group_7359lakshadweep_apt34r.svg',
   },
   {
     state_code: 'MH',
     state_name: 'Maharashtra',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875483/Group_7350maharastra_va3umd.svg',
   },
   {
     state_code: 'MP',
     state_name: 'Madhya Pradesh',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643874482/Group_7336madhyapradesh_pp3zi4.svg',
   },
   {
     state_code: 'MN',
     state_name: 'Manipur',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875189/Group_7346manipur_bioduk.svg',
   },
   {
     state_code: 'ML',
     state_name: 'Meghalaya',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875073/Group_7344meghalaya_axne7x.svg',
   },
   {
     state_code: 'MZ',
     state_name: 'Mizoram',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643877350/Group_7347mizeram_vrws31.svg',
   },
   {
     state_code: 'NL',
     state_name: 'Nagaland',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875133/Group_7345nagaland_pa7ink.svg',
   },
   {
     state_code: 'OR',
     state_name: 'Odisha',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875408/Group_7348orissa_ogt9qf.svg',
   },
   {
     state_code: 'PY',
     state_name: 'Puducherry',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643876052/Group_7360pudicherry_dqozta.svg',
   },
   {
     state_code: 'PB',
     state_name: 'Punjab',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643874057/Group_7330punjab_uotgvg.png',
   },
   {
     state_code: 'RJ',
     state_name: 'Rajasthan',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643874290/Group_7333rajastan_njuouf.svg',
   },
   {
     state_code: 'SK',
     state_name: 'Sikkim',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643874848/Group_7338sikkim_vzwduv.svg',
   },
   {
     state_code: 'TN',
     state_name: 'Tamil Nadu',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643877485/Group_7356tamilnadu_j91huf.svg',
   },
   {
     state_code: 'TG',
     state_name: 'Telangana',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875534/Group_7351telangana_gcis15.svg',
   },
   {
     state_code: 'TR',
     state_name: 'Tripura',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643875284/Group_7352tripura_haza0j.svg',
   },
   {
     state_code: 'UP',
     state_name: 'Uttar Pradesh',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643874361/Group_7334uttarpradesh_wmgalk.svg',
   },
   {
     state_code: 'UT',
     state_name: 'Uttarakhand',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643874117/Group_7331uttarakhand_tzke2z.svg',
   },
   {
     state_code: 'WB',
     state_name: 'West Bengal',
+    image_url:
+      'https://res.cloudinary.com/dyhsyterg/image/upload/v1643874758/Group_7343westbengal_pob4u5.svg',
   },
 ]
 
@@ -171,7 +243,14 @@ const cardConstants = {
   deceased: 'DECEASED',
 }
 
+const trendStatus = {
+  cumulative: 'CUMULATIVE',
+  daily: 'DAILY',
+}
+
 let lineChartData = {}
+
+let districtNames = {}
 
 class StateSpecific extends Component {
   state = {
@@ -180,6 +259,8 @@ class StateSpecific extends Component {
     appStatus1: appConstants.initial,
     appStatus2: appConstants.initial,
     timeLineData: [],
+    trendState: trendStatus.cumulative,
+    selectValue: 'Select District',
   }
 
   componentDidMount() {
@@ -215,7 +296,8 @@ class StateSpecific extends Component {
     const url = 'https://apis.ccbp.in/covid19-state-wise-data'
     const response = await fetch(url)
     const data = await response.json()
-    if (!Object.keys(data).includes(id)) {
+    const codeList = statesList.map(eachValue => eachValue.state_code)
+    if (!codeList.includes(id)) {
       const {history} = this.props
       history.replace('/not-found')
     }
@@ -247,6 +329,8 @@ class StateSpecific extends Component {
         districts: data[id].districts,
         tested: data[id].total.tested,
         lastUpdated: data[id].meta.last_updated,
+        imageUrl: statesList.find(eachValue => eachValue.state_code === id)
+          .image_url,
       }
       this.setState({
         requiredBasicDetails: newData,
@@ -262,7 +346,13 @@ class StateSpecific extends Component {
     const url = `https://apis.ccbp.in/covid19-timelines-data/${stateCode}`
     const response = await fetch(url)
     const data = await response.json()
+    const codeList = statesList.map(eachValue => eachValue.state_code)
+    if (!codeList.includes(stateCode)) {
+      const {history} = this.props
+      history.replace('/not-found')
+    }
     if (response.ok) {
+      districtNames = data[`${stateCode}`].districts
       const newData = data[`${stateCode}`].dates
       this.setState({timeLineData: newData, appStatus2: appConstants.success})
     }
@@ -345,10 +435,6 @@ class StateSpecific extends Component {
 
   stateSuccessContainer = () => {
     const {requiredBasicDetails, cardStatus} = this.state
-    let districtValue = []
-    if (requiredBasicDetails.length !== 0) {
-      districtValue = this.getDistrictValues()
-    }
     const confirmedCardClassName =
       cardStatus === cardConstants.confirmed
         ? 'card-list-item card-red'
@@ -365,6 +451,11 @@ class StateSpecific extends Component {
       cardStatus === cardConstants.deceased
         ? 'card-list-item card-grey'
         : 'card-list-item'
+
+    let districtValue = []
+    if (requiredBasicDetails.length !== 0) {
+      districtValue = this.getDistrictValues()
+    }
     return (
       <div className="state-content-container">
         <div className="top-container">
@@ -380,14 +471,12 @@ class StateSpecific extends Component {
           Last update on {requiredBasicDetails.lastUpdated}.
         </p>
         <ul className="state-specific-card-list">
-          <li
-            className={confirmedCardClassName}
-            testid="stateSpecificConfirmedCasesContainer"
-          >
+          <li className={confirmedCardClassName}>
             <button
               type="button"
               className="card-list-button"
               onClick={() => this.onCardClick(cardConstants.confirmed)}
+              testid="stateSpecificConfirmedCasesContainer"
             >
               <p className="confirm-card-name">Confirmed</p>
               <img
@@ -400,14 +489,12 @@ class StateSpecific extends Component {
               </p>
             </button>
           </li>
-          <li
-            className={activeCardClassName}
-            testid="stateSpecificActiveCasesContainer"
-          >
+          <li className={activeCardClassName}>
             <button
               type="button"
               className="card-list-button"
               onClick={() => this.onCardClick(cardConstants.active)}
+              testid="stateSpecificActiveCasesContainer"
             >
               <p className="active-card-name">Active</p>
               <img
@@ -420,14 +507,12 @@ class StateSpecific extends Component {
               </p>
             </button>
           </li>
-          <li
-            className={recoveredCardClassName}
-            testid="stateSpecificRecoveredCasesContainer"
-          >
+          <li className={recoveredCardClassName}>
             <button
               type="button"
               className="card-list-button"
               onClick={() => this.onCardClick(cardConstants.recovered)}
+              testid="stateSpecificRecoveredCasesContainer"
             >
               <p className="recovered-card-name">Recovered</p>
               <img
@@ -440,14 +525,12 @@ class StateSpecific extends Component {
               </p>
             </button>
           </li>
-          <li
-            className={deceasedCardClassName}
-            testid="stateSpecificDeceasedCasesContainer"
-          >
+          <li className={deceasedCardClassName}>
             <button
               type="button"
               className="card-list-button"
               onClick={() => this.onCardClick(cardConstants.deceased)}
+              testid="stateSpecificDeceasedCasesContainer"
             >
               <p className="deceased-card-name">Deceased</p>
               <img
@@ -461,8 +544,24 @@ class StateSpecific extends Component {
             </button>
           </li>
         </ul>
+
+        <div className="image-container">
+          <img
+            className="state-image"
+            src={requiredBasicDetails.imageUrl}
+            alt={requiredBasicDetails.idValue}
+          />
+          <div className="image-content">
+            <p className="ncp-report">NCP report</p>
+            <p className="population-heading">Population</p>
+            <p className="content-numbers">{requiredBasicDetails.population}</p>
+            <p className="population-heading">Tested</p>
+            <p className="content-numbers">{requiredBasicDetails.tested}</p>
+          </div>
+        </div>
+
         <h1 className="top-districts">Top Districts</h1>
-        <ul className="top-districts-list" testid="topDistrictsUnorderedList">
+        <ul testid="topDistrictsUnorderedList" className="top-districts-list">
           {districtValue.map(eachValue => (
             <li className="top-districts-list-item" key={eachValue.name}>
               <p className="top-districts-name">{eachValue.value}</p>
@@ -571,12 +670,19 @@ class StateSpecific extends Component {
   }
 
   getLineChartData = () => {
-    const {timeLineData} = this.state
+    const {selectValue, trendState} = this.state
+    let {timeLineData} = this.state
+    if (selectValue !== 'Select District') {
+      timeLineData = districtNames[selectValue].dates
+    }
     const confirmedData = []
     Object.keys(timeLineData).forEach(key =>
       confirmedData.push({
         date: key,
-        number: timeLineData[key].total.confirmed,
+        number:
+          timeLineData[key].total.confirmed === undefined
+            ? 0
+            : timeLineData[key].total.confirmed,
       }),
     )
     const activeData = []
@@ -584,30 +690,45 @@ class StateSpecific extends Component {
       activeData.push({
         date: key,
         number:
-          timeLineData[key].total.confirmed -
-          (timeLineData[key].total.deceased +
-            timeLineData[key].total.recovered),
+          (timeLineData[key].total.confirmed === undefined
+            ? 0
+            : timeLineData[key].total.confirmed) -
+          ((timeLineData[key].total.deceased === undefined
+            ? 0
+            : timeLineData[key].total.deceased) +
+            (timeLineData[key].total.recovered === undefined
+              ? 0
+              : timeLineData[key].total.recovered)),
       }),
     )
     const recoveredData = []
     Object.keys(timeLineData).forEach(key =>
       recoveredData.push({
         date: key,
-        number: timeLineData[key].total.recovered,
+        number:
+          timeLineData[key].total.recovered === undefined
+            ? 0
+            : timeLineData[key].total.recovered,
       }),
     )
     const deceasedData = []
     Object.keys(timeLineData).forEach(key =>
       deceasedData.push({
         date: key,
-        number: timeLineData[key].total.deceased,
+        number:
+          timeLineData[key].total.deceased === undefined
+            ? 0
+            : timeLineData[key].total.deceased,
       }),
     )
     const testedData = []
     Object.keys(timeLineData).forEach(key =>
       testedData.push({
         date: key,
-        number: timeLineData[key].total.tested,
+        number:
+          timeLineData[key].total.tested === undefined
+            ? 0
+            : timeLineData[key].total.tested,
       }),
     )
     lineChartData = {
@@ -617,10 +738,87 @@ class StateSpecific extends Component {
       deceased: deceasedData,
       tested: testedData,
     }
+
+    if (trendState === trendStatus.daily) {
+      let refValue = 0
+      const newConfirmedData = confirmedData.map(eachValue => {
+        let newValue = 0
+        newValue = eachValue.number - refValue
+        refValue = eachValue.number
+        return {
+          date: eachValue.date,
+          number: newValue,
+        }
+      })
+      refValue = 0
+      const newRecoveredData = recoveredData.map(eachValue => {
+        let newValue = 0
+        newValue = eachValue.number - refValue
+        refValue = eachValue.number
+        return {
+          date: eachValue.date,
+          number: newValue,
+        }
+      })
+      refValue = 0
+      const newDeceasedData = deceasedData.map(eachValue => {
+        let newValue = 0
+        newValue = eachValue.number - refValue
+        refValue = eachValue.number
+        return {
+          date: eachValue.date,
+          number: newValue,
+        }
+      })
+      refValue = 0
+      const newActiveData = activeData.map(eachValue => {
+        let newValue = 0
+        if (eachValue.number > refValue) {
+          newValue = eachValue.number - refValue
+          refValue = eachValue.number
+        }
+        refValue = eachValue.number
+        return {
+          date: eachValue.date,
+          number: newValue,
+        }
+      })
+      refValue = 0
+      const newTestedData = testedData.map(eachValue => {
+        let newValue = 0
+        newValue = eachValue.number - refValue
+        refValue = eachValue.number
+        return {
+          date: eachValue.date,
+          number: newValue,
+        }
+      })
+      newConfirmedData.splice(0, 1)
+      newActiveData.splice(0, 1)
+      newRecoveredData.splice(0, 1)
+      newDeceasedData.splice(0, 1)
+      newTestedData.splice(0, 1)
+      lineChartData = {
+        confirmed: newConfirmedData,
+        active: newActiveData,
+        recovered: newRecoveredData,
+        deceased: newDeceasedData,
+        tested: newTestedData,
+      }
+    }
+  }
+
+  selectChange = e => {
+    this.setState({selectValue: e.target.value}, this.getLineChartData)
+  }
+
+  trendChange = value => {
+    this.setState({trendState: value})
   }
 
   timeLineSuccessContainer = () => {
-    const {timeLineData, cardStatus} = this.state
+    const {timeLineData, cardStatus, trendState, selectValue} = this.state
+
     let newTimeLineData = []
     if (timeLineData.length !== 0) {
       newTimeLineData = this.getTimeLineChartValues()
@@ -642,8 +840,18 @@ class StateSpecific extends Component {
         break
     }
     this.getLineChartData()
+    const daily =
+      trendState === trendStatus.daily
+        ? 'trend-button highlight-trend'
+        : 'trend-button'
+    const cumulative =
+      trendState === trendStatus.cumulative
+        ? 'trend-button highlight-trend'
+        : 'trend-button'
+    const selectOptions = Object.keys(districtNames)
+
     return (
-      <div className="graphs-container" testid="lineChartsContainer">
+      <div testid="lineChartsContainer" className="graphs-container">
         <div className="graphs-lg">
           <div className="bar-chart-lg">
             <BarChart
@@ -672,7 +880,37 @@ class StateSpecific extends Component {
               />
             </BarChart>
           </div>
-          <h1 className="daily-spread-trends">Daily Spread Trends</h1>
+          <h1 className="daily-spread-trends">Spread Trends</h1>
+          <div className="trend-holder">
+            <button
+              type="button"
+              className={cumulative}
+              onClick={() => this.trendChange(trendStatus.cumulative)}
+            >
+              Cumulative
+            </button>
+            <button
+              type="button"
+              className={daily}
+              onClick={() => this.trendChange(trendStatus.daily)}
+            >
+              Daily
+            </button>
+          </div>
+          <div className="select-container">
+            <select
+              value={selectValue}
+              className="select-element"
+              onChange={this.selectChange}
+            >
+              <option value="Select District">Select District</option>
+              {selectOptions.map(eachValue => (
+                <option key={eachValue} value={eachValue}>
+                  {eachValue}
+                </option>
+              ))}
+            </select>
+          </div>
           <div className="line-chart-lg">
             <div className="confirmed-chart">
               <p className="confirmed-title">Confirmed</p>
@@ -840,6 +1078,36 @@ class StateSpecific extends Component {
             </BarChart>
           </div>
           <h1 className="daily-spread-trends">Daily Spread Trends</h1>
+          <div className="trend-holder">
+            <button
+              type="button"
+              className={cumulative}
+              onClick={() => this.trendChange(trendStatus.cumulative)}
+            >
+              Cumulative
+            </button>
+            <button
+              type="button"
+              className={daily}
+              onClick={() => this.trendChange(trendStatus.daily)}
+            >
+              Daily
+            </button>
+          </div>
+          <div className="select-container">
+            <select
+              value={selectValue}
+              className="select-element"
+              onChange={this.selectChange}
+            >
+              <option value="Select District">Select District</option>
+              {selectOptions.map(eachValue => (
+                <option key={eachValue} value={eachValue}>
+                  {eachValue}
+                </option>
+              ))}
+            </select>
+          </div>
           <div className="line-chart-sm">
             <div className="confirmed-chart">
               <p className="confirmed-title">Confirmed</p>

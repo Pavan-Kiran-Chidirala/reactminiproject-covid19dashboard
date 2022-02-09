@@ -21,20 +21,36 @@ class Header extends Component {
     const homeClassName = path === '/' ? 'link-name highlight' : 'link-name'
     const aboutClassName =
       path === '/about' ? 'link-name highlight' : 'link-name'
+    const vaccinationClassName =
+      path === '/vaccination' ? 'link-name highlight' : 'link-name'
     return (
       <>
-        <div className="header-list">
+        <nav className="header-list">
           <Link to="/" className="link-logo">
-            <h1 className="app-name">
-              COVID19<span className="blue-text">INDIA</span>
-            </h1>
+            <span className="app-name">COVID19</span>
+            <span className="app-name blue-text">INDIA</span>
           </Link>
           <ul className="nav-list">
             <Link className="link-logo" to="/">
-              <li className={homeClassName}>Home</li>
+              <li key="1">
+                <button type="button" className={homeClassName}>
+                  Home
+                </button>
+              </li>
+            </Link>
+            <Link className="link-logo" to="/vaccination">
+              <li key="2">
+                <button type="button" className={vaccinationClassName}>
+                  Vaccination
+                </button>
+              </li>
             </Link>
             <Link className="link-logo" to="/about">
-              <li className={aboutClassName}>About</li>
+              <li key="3">
+                <button type="button" className={aboutClassName}>
+                  About
+                </button>
+              </li>
             </Link>
           </ul>
           <button
@@ -48,24 +64,31 @@ class Header extends Component {
               className="menu-image"
             />
           </button>
-        </div>
+        </nav>
         {showMenu ? (
           <ul className="menu-list">
-            <li className="home-list-item">
-              <Link className="link-logo" to="/">
+            <Link className="link-item" to="/">
+              <li key="1">
                 <button type="button" className={homeClassName}>
                   Home
                 </button>
-              </Link>
-            </li>
-            <li className="about-list-item">
-              <Link className="link-logo" to="/about">
+              </li>
+            </Link>
+            <Link className="link-item" to="/vaccination">
+              <li key="2">
+                <button type="button" className={vaccinationClassName}>
+                  Vaccination
+                </button>
+              </li>
+            </Link>
+            <Link className="link-item" to="/about">
+              <li key="3">
                 <button type="button" className={aboutClassName}>
                   About
                 </button>
-              </Link>
-            </li>
-            <li className="close-item">
+              </li>
+            </Link>
+            <li className="close-item" key="3">
               <button
                 type="button"
                 className="close-button"
