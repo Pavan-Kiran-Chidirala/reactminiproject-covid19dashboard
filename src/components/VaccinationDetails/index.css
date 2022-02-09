@@ -1,0 +1,310 @@
+.vaccination-container {
+  width: 100%;
+  height: 100%;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 80px;
+  padding-top: 40px;
+  font-family: 'Roboto';
+  background-color: #161625;
+}
+
+@media screen and (max-width: 576px) {
+  .vaccination-container {
+    padding: 20px;
+    align-items: center;
+  }
+}
+
+.top-para {
+  color: #cbd5e1;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .top-para {
+    font-size: 16px;
+  }
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.select-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.select-holder {
+  width: 180px;
+  padding: 10px;
+  margin-right: 14px;
+  background-color: #2f2f43;
+  opacity: 0.5;
+  color: #f8fafc;
+  font-size: 10px;
+  border-style: none;
+  outline: none;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 576px) {
+  .select-container {
+    justify-content: center;
+  }
+  .select-holder {
+    width: 120px;
+    font-size: 8px;
+  }
+}
+
+.vaccination-content-container {
+  width: 100%;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.top-site-total-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .top-site-total-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.site-container {
+  width: 350px;
+  height: 125px;
+  background-color: #2f2f43;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .site-container {
+    width: 300px;
+  }
+}
+
+.site-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.site-image {
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.site-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.site-heading {
+  color: #cbd5e1;
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+
+.count-big {
+  color: #ffffff;
+  font-size: 10px;
+  margin-top: 0px;
+}
+
+.bottom-site-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.bottom-site-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.sub-name {
+  color: #cbd5e1;
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+.sub-count {
+  color: #e2e8f0;
+  font-size: 9px;
+  margin-top: 0px;
+}
+
+.vaccination-trends {
+  width: 100%;
+  padding: 20px;
+  background-color: #1c1c2b;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.trend-heading {
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+.button-holder {
+  display: flex;
+  flex-direction: row;
+}
+
+.vaccine-button {
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+  color: #94a3b8;
+  font-size: 10px;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.highlight-button {
+  color: #ffffff;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+}
+
+.line-chart-lg {
+  width: 100%;
+  height: 250px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.line-chart-sm {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .line-chart-lg {
+    display: none;
+  }
+
+  .line-chart-sm {
+    display: block;
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    font-size: 6px;
+  }
+}
+
+.india-image {
+  width: 450px;
+  height: 450px;
+}
+
+@media screen and (max-width: 576px) {
+  .india-image {
+    width: 250px;
+  }
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  .bottom-container {
+    flex-direction: column;
+  }
+}
+
+.vaccination-category {
+  width: 49%;
+  height: 420px;
+  background-color: #1c1c2b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .vaccination-category {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.left-pie-charts {
+  width: 100%;
+  height: 48%;
+  margin-bottom: 0px;
+  font-size: 10px;
+}
+
+.vaccination-by-age {
+  width: 49%;
+  height: 420px;
+  background-color: #1c1c2b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .vaccination-by-age {
+    width: 100%;
+  }
+}
+
+.right-piechart {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+.loader-container {
+  width: 100%;
+  flex-grow: 2;
+}

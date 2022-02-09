@@ -21,6 +21,8 @@ class Header extends Component {
     const homeClassName = path === '/' ? 'link-name highlight' : 'link-name'
     const aboutClassName =
       path === '/about' ? 'link-name highlight' : 'link-name'
+    const vaccinationClassName =
+      path === '/vaccination' ? 'link-name highlight' : 'link-name'
     return (
       <>
         <nav className="header-list">
@@ -36,8 +38,15 @@ class Header extends Component {
                 </button>
               </li>
             </Link>
-            <Link className="link-logo" to="/about">
+            <Link className="link-logo" to="/vaccination">
               <li key="2">
+                <button type="button" className={vaccinationClassName}>
+                  Vaccination
+                </button>
+              </li>
+            </Link>
+            <Link className="link-logo" to="/about">
+              <li key="3">
                 <button type="button" className={aboutClassName}>
                   About
                 </button>
@@ -59,14 +68,21 @@ class Header extends Component {
         {showMenu ? (
           <ul className="menu-list">
             <Link className="link-item" to="/">
-              <li className="home-list-item" key="1">
+              <li key="1">
                 <button type="button" className={homeClassName}>
                   Home
                 </button>
               </li>
             </Link>
+            <Link className="link-item" to="/vaccination">
+              <li key="2">
+                <button type="button" className={vaccinationClassName}>
+                  Vaccination
+                </button>
+              </li>
+            </Link>
             <Link className="link-item" to="/about">
-              <li className="about-list-item" key="2">
+              <li key="3">
                 <button type="button" className={aboutClassName}>
                   About
                 </button>

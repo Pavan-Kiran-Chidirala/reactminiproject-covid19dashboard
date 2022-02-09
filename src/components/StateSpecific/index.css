@@ -116,7 +116,7 @@
 
 .card-list-item {
   height: 100%;
-  min-width: 165px;
+  min-width: 155px;
   justify-content: flex-start;
   align-items: center;
   border-radius: 5px;
@@ -498,12 +498,29 @@
   width: 320px;
 }
 
+@media screen and (max-width: 576px) {
+  .image-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .state-image {
+    width: 200px;
+  }
+}
+
 .image-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   margin-left: 100px;
+}
+
+@media screen and (max-width: 576px) {
+  .image-content {
+    align-self: center;
+    margin-left: 0px;
+  }
 }
 
 .ncp-report {
@@ -543,4 +560,11 @@
   border-style: none;
   outline: none;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 576px) {
+  .select-element {
+    width: 150px;
+    font-size: 10px;
+  }
 }
