@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/reactminiproject-covid19dashboard/static/css/main.32e02ada.chunk.css",
+    "main.js": "/reactminiproject-covid19dashboard/static/js/main.f68d3ae1.chunk.js",
+    "main.js.map": "/reactminiproject-covid19dashboard/static/js/main.f68d3ae1.chunk.js.map",
+    "runtime-main.js": "/reactminiproject-covid19dashboard/static/js/runtime-main.2a524033.js",
+    "runtime-main.js.map": "/reactminiproject-covid19dashboard/static/js/runtime-main.2a524033.js.map",
+    "static/js/2.b5fa28dc.chunk.js": "/reactminiproject-covid19dashboard/static/js/2.b5fa28dc.chunk.js",
+    "static/js/2.b5fa28dc.chunk.js.map": "/reactminiproject-covid19dashboard/static/js/2.b5fa28dc.chunk.js.map",
+    "index.html": "/reactminiproject-covid19dashboard/index.html",
+    "static/css/main.32e02ada.chunk.css.map": "/reactminiproject-covid19dashboard/static/css/main.32e02ada.chunk.css.map",
+    "static/js/2.b5fa28dc.chunk.js.LICENSE.txt": "/reactminiproject-covid19dashboard/static/js/2.b5fa28dc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a524033.js",
+    "static/js/2.b5fa28dc.chunk.js",
+    "static/css/main.32e02ada.chunk.css",
+    "static/js/main.f68d3ae1.chunk.js"
+  ]
+}
