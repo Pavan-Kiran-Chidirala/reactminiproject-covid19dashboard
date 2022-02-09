@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/reactminiproject-covid19dashboard/static/css/main.d93897e4.chunk.css",
-    "main.js": "/reactminiproject-covid19dashboard/static/js/main.180d38f5.chunk.js",
-    "main.js.map": "/reactminiproject-covid19dashboard/static/js/main.180d38f5.chunk.js.map",
+    "main.js": "/reactminiproject-covid19dashboard/static/js/main.5448fa70.chunk.js",
+    "main.js.map": "/reactminiproject-covid19dashboard/static/js/main.5448fa70.chunk.js.map",
     "runtime-main.js": "/reactminiproject-covid19dashboard/static/js/runtime-main.2a524033.js",
     "runtime-main.js.map": "/reactminiproject-covid19dashboard/static/js/runtime-main.2a524033.js.map",
-    "static/js/2.b5fa28dc.chunk.js": "/reactminiproject-covid19dashboard/static/js/2.b5fa28dc.chunk.js",
-    "static/js/2.b5fa28dc.chunk.js.map": "/reactminiproject-covid19dashboard/static/js/2.b5fa28dc.chunk.js.map",
+    "static/js/2.2cf88ff9.chunk.js": "/reactminiproject-covid19dashboard/static/js/2.2cf88ff9.chunk.js",
+    "static/js/2.2cf88ff9.chunk.js.map": "/reactminiproject-covid19dashboard/static/js/2.2cf88ff9.chunk.js.map",
     "index.html": "/reactminiproject-covid19dashboard/index.html",
     "static/css/main.d93897e4.chunk.css.map": "/reactminiproject-covid19dashboard/static/css/main.d93897e4.chunk.css.map",
-    "static/js/2.b5fa28dc.chunk.js.LICENSE.txt": "/reactminiproject-covid19dashboard/static/js/2.b5fa28dc.chunk.js.LICENSE.txt"
+    "static/js/2.2cf88ff9.chunk.js.LICENSE.txt": "/reactminiproject-covid19dashboard/static/js/2.2cf88ff9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2a524033.js",
-    "static/js/2.b5fa28dc.chunk.js",
+    "static/js/2.2cf88ff9.chunk.js",
     "static/css/main.d93897e4.chunk.css",
-    "static/js/main.180d38f5.chunk.js"
+    "static/js/main.5448fa70.chunk.js"
   ]
 }
