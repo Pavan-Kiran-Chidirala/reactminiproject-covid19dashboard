@@ -1258,12 +1258,12 @@ class StateSpecific extends Component {
   render() {
     return (
       <>
-        <Header />
         <div className="main-specific-container">
+          <Header />
           {this.stateContentStatus()}
           {this.timeLineContentStatus()}
+          <Footer />
         </div>
-        <Footer />
       </>
     )
   }
